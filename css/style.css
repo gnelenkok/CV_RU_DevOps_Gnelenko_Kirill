@@ -154,6 +154,11 @@ span {
     box-shadow: 0px 0px 15px #F4CBB2;
     color: #F4CBB2;
 }
+.codepen:hover {
+    border-color: #3a3875;
+    box-shadow: 0px 0px 15px #3a3875;
+    color: #3a3875;
+}
 i {
     width: 20px;
     font-size: 20px;
