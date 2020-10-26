@@ -12,14 +12,13 @@ body {
     font-family: Montserrat;
 }
 .main-container {
-    background-color: #ffffff;
+    background-color: #fff;
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
-
 }
-.bar {
+.sidebar {
     background: url(https://images.wallpaperscraft.com/image/mountains_peak_aerial_view_135047_1080x1920.jpg) no-repeat;
     background-color: #1e2939; 
     background-size: cover;
@@ -35,7 +34,7 @@ body {
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
-    color: #ffffff;
+    color: #fff;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
@@ -44,13 +43,13 @@ body {
 }
 a { 
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
 }  
 .tech-skills-container {
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
-    color: #ffffff;
+    color: #fff;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
@@ -61,7 +60,7 @@ a {
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
-    color: #ffffff;
+    color: #fff;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
@@ -72,18 +71,58 @@ a {
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
-    color: #ffffff;
+    color: #fff;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.42px;
     letter-spacing: 0.42px;
 }
-.knowledge-level {
-    width: 90%;
+.bar {
+    height: 10px;
+    width: 290px;
+    border: 2px solid #1e2939;
+    background-color: #465f85; 
+    border-radius: 20px;
+    position: relative;
+}
+.bar span {
+    position: absolute;
+    height: 100%;
+}
+.bar.de span {
+    width: 20%;
+}
+.bar.fr span {
+    width: 20%;
+}
+.bar.en span {
+    width: 30%;
+}
+.bar.uk span {
+    width: 100%;
+}
+.bar.ru span {
+    width: 100%;
+}
+.bar span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    border-radius: 20px;
+    animation: progress_bar 1s ease-in-out forwards;
+}
+@keyframes progress_bar {
+    to {
+      width: 100%;
+    }
 }
 span {
-    color: #d6dfeb;
+    color: #ebf4ff;
 }
 .skills {
     color:  #003077;
@@ -119,11 +158,6 @@ span {
     transition: all 0.3s;
     color: #ffffff;  
 }
-.phone:hover {
-    border-color: #32cd32;
-    box-shadow: 0px 0px 15px #32cd32;
-    color: #32cd32;
-}
 .telegram:hover {
     border-color: #0088cc;
     box-shadow: 0px 0px 15px #0088cc;
@@ -133,11 +167,6 @@ span {
     border-color: #8f5db7;
     box-shadow: 0px 0px 15px #8f5db7;
     color: #8f5db7;
-}
-.gmail:hover {
-    border-color: #d44638;
-    box-shadow: 0px 0px 15px #d44638;
-    color: #d44638;
 }
 .linkedin:hover {
     border-color: #0077b5;
@@ -164,10 +193,10 @@ i {
     font-size: 20px;
 } 
 .abaut-me-container {
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 .proffesion {
     font-size: 14px;
