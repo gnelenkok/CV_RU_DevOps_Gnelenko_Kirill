@@ -15,21 +15,29 @@ body {
     background-color: #fff;
     display: flex;
     max-width: 1200px;
+    min-width: 700px;
     margin: 0 auto;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
+
+/* Sidebar */
+
 .sidebar {
+    position:relative;
     background: url(https://images.wallpaperscraft.com/image/mountains_peak_aerial_view_135047_1080x1920.jpg) no-repeat;
     background-color: #1e2939; 
     background-size: cover;
-    width: 370px;
+    max-width: 370px;
     padding-top: 40px;
     padding-bottom: 40px;  
 }
 .my-photo {
-    width: 80%;
+    max-width: 290px;
     margin-left: 10%;
 }
+
+/*Contacts container*/
+
 .contacts-container {
     margin-top: 40px;
     margin-left: 40px;
@@ -41,10 +49,17 @@ body {
     letter-spacing: 0.42px;
     letter-spacing: 0.42px;
 }
-a { 
+.link { 
     text-decoration: none;
     color: #fff;
-}  
+    transition: color 0.3s ease-in;
+}
+.link:hover {
+    color: #465f85;
+}
+
+/*Tech Skills container*/
+
 .tech-skills-container {
     margin-top: 40px;
     margin-left: 40px;
@@ -56,6 +71,9 @@ a {
     letter-spacing: 0.42px;
     letter-spacing: 0.42px;       
 }
+
+/*Soft Skills container*/
+
 .soft-skills-container {
     margin-top: 40px;
     margin-left: 40px;
@@ -67,6 +85,15 @@ a {
     letter-spacing: 0.42px;
     letter-spacing: 0.42px;
 }
+
+.skills {
+    color: #ebf4ff;
+}
+.list {
+    color:  #003077;
+}
+/*Language container*/
+
 .language {
     margin-top: 40px;
     margin-left: 40px;
@@ -80,7 +107,7 @@ a {
 }
 .bar {
     height: 10px;
-    width: 290px;
+    width: 98%;
     border: 2px solid #1e2939;
     background-color: #465f85; 
     border-radius: 20px;
@@ -121,12 +148,9 @@ a {
       width: 100%;
     }
 }
-span {
-    color: #ebf4ff;
-}
-.skills {
-    color:  #003077;
-}
+
+/*Sociol container*/
+
 .sociol-container {
     margin-top: 40px;
     margin-left: 40px;
@@ -150,6 +174,7 @@ span {
 .sociol__link {
     width: 40px;
     height: 40px;
+    text-decoration: none;
     border-radius: 50%;
     border: 3px solid #ffffff;
     display: flex;
@@ -188,10 +213,29 @@ span {
     box-shadow: 0px 0px 15px #3a3875;
     color: #3a3875;
 }
-i {
+.icons {
     width: 20px;
     font-size: 20px;
-} 
+}
+
+.cv {
+    position: absolute;
+    display: inline-block;
+    bottom:0;
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+.link_cv {
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in;
+}
+.link_cv:hover {
+    color: #465f85;
+}
+/*Abaut me container*/
+
 .abaut-me-container {
     padding-left: 5%;
     padding-right: 5%;
@@ -224,6 +268,7 @@ i {
     color:  #525a64;
 }   
 .company {
+    text-decoration: none;
     color:  #003077;
 }
 .work-experience {
@@ -249,6 +294,7 @@ i {
     line-height: 24px;
 }
 .univwesity {
+    text-decoration: none;
     color:  #003077;
     font-size: 16px;
     font-weight: 700;
